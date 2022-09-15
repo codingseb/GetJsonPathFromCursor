@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32825.248
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetJsonPathFromCursor", "GetJsonPathFromCursor\GetJsonPathFromCursor.csproj", "{27948223-D4CE-4ECA-BF95-BF2BE0FB845B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{27948223-D4CE-4ECA-BF95-BF2BE0FB845B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27948223-D4CE-4ECA-BF95-BF2BE0FB845B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27948223-D4CE-4ECA-BF95-BF2BE0FB845B}.Debug|x86.ActiveCfg = Debug|x86
+		{27948223-D4CE-4ECA-BF95-BF2BE0FB845B}.Debug|x86.Build.0 = Debug|x86
+		{27948223-D4CE-4ECA-BF95-BF2BE0FB845B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27948223-D4CE-4ECA-BF95-BF2BE0FB845B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27948223-D4CE-4ECA-BF95-BF2BE0FB845B}.Release|x86.ActiveCfg = Release|x86
+		{27948223-D4CE-4ECA-BF95-BF2BE0FB845B}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D782E8A3-0B5D-461F-A7CD-113470832CA7}
+	EndGlobalSection
+EndGlobal
