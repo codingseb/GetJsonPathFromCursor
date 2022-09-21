@@ -54,9 +54,9 @@ namespace GetJsonPathFromCursor
             var reverseStringDetectionRegex = new Regex(@"^""(?<Key>(""\\|[^""])*)""\s*");
             var objectStartWithKeyRegex = new Regex(@"^(?<start>{|\[)\s*:\s*");
             var objectStartWithoutKeyRegex = new Regex(@"^(?<start>{|\[)\s*");
-            var otherJsonObject = new Regex(@"^,\s*}(\s+|llun|eurt|eslaf|\d+(\.\d+)?|""(""\\|[^""])*""|:|,|(?<curlyBracket>})|(?<-curlyBracket>{)|(?<squareBracket>\])|(?<-squareBracket>\[))*{(\s*:\s*""(""\\|[^""])*"")*\s*");
-            var otherJsonCollection = new Regex(@"^,\s*\](\s+|llun|eurt|eslaf|\d+(\.\d+)?|""(""\\|[^""])*""|:|,|(?<curlyBracket>})|(?<-curlyBracket>{)|(?<squareBracket>\])|(?<-squareBracket>\[))*\[(\s*:\s*""(""\\|[^""])*"")*\s*");
-            var otherJsonSimpleValue = new Regex(@"^,\s*(llun|eurt|eslaf|\d+(\.\d+)?|""(""\\|[^""])*"")\s*:\s*""(""\\|[^""])*""\s*");
+            var otherJsonObject = new Regex(@"^,\s*}(\s+|\w+|\d+(\.\d+)?|""(""\\|[^""])*""|:|,|(?<curlyBracket>})|(?<-curlyBracket>{)|(?<squareBracket>\])|(?<-squareBracket>\[))*{(\s*:\s*""(""\\|[^""])*"")*\s*");
+            var otherJsonCollection = new Regex(@"^,\s*\](\s+|\w+|\d+(\.\d+)?|""(""\\|[^""])*""|:|,|(?<curlyBracket>})|(?<-curlyBracket>{)|(?<squareBracket>\])|(?<-squareBracket>\[))*\[(\s*:\s*""(""\\|[^""])*"")*\s*");
+            var otherJsonSimpleValue = new Regex(@"^,\s*(\w+|\d+(\.\d+)?|""(""\\|[^""])*"")\s*:\s*""(""\\|[^""])*""\s*");
 
             int position = 0;
 
