@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="GetJsonPathFromCursor.ddf5199e-94cf-4ebd-b609-3fcd3359fda6" Version="1.0" Language="en-US" Publisher="CodingSeb" />
+        <Identity Id="GetJsonPathFromCursor.ddf5199e-94cf-4ebd-b609-3fcd3359fda6" Version="1.0" Language="en-US" Publisher="Coding Seb" />
         <DisplayName>Get Json Path From Cursor</DisplayName>
         <Description xml:space="preserve">Get Json Path From Cursor</Description>
+        <License>LICENSE.txt</License>
         <Icon>Resources\Icon.png</Icon>
         <PreviewImage>Resources\Icon.png</PreviewImage>
     </Metadata>
