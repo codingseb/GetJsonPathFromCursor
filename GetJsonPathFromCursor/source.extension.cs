@@ -8,8 +8,8 @@ namespace GetJsonPathFromCursor
     internal sealed partial class Vsix
     {
         public const string Id = "GetJsonPathFromCursor.ddf5199e-94cf-4ebd-b609-3fcd3359fda6";
-        public const string Name = "GetJsonPathFromCursor";
-        public const string Description = @"Empty VSIX Project.";
+        public const string Name = "Get Json Path From Cursor";
+        public const string Description = @"Get Json Path From Cursor";
         public const string Language = "en-US";
         public const string Version = "1.0";
         public const string Author = "CodingSeb";

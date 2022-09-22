@@ -14,7 +14,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>GetJsonPathFromCursor</RootNamespace>
-    <AssemblyName>GetJsonPathFromCursor</AssemblyName>
+    <AssemblyName>Get Json Path From Cursor</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <GeneratePkgDefFile>true</GeneratePkgDefFile>
     <UseCodebase>true</UseCodebase>
