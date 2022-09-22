@@ -16,7 +16,7 @@ namespace GetJsonPathFromCursor
         protected override async Task ExecuteAsync(OleMenuCmdEventArgs e)
         {
             var getAllKeyRegex = new Regex(@"^(?<startOfKey>\s*"")?(?<EndOfKey>(\\""|[^""])*"")\s*:");
-            var isOutOFAStringRegex = new Regex(@"^(""(\\""|[^""])*""|[^""])*");
+            var isOutOfAStringRegex = new Regex(@"^(""(\\""|[^""])*""|[^""])*");
 
             // parse and eat Json Element regex
             var objectStartWithKeyRegex = new Regex(@"^(?<start>{|\[)\s*:\s*");
@@ -67,7 +67,7 @@ namespace GetJsonPathFromCursor
                 {
                     // Correction of the position if the cursor is on the value part of a key value pair or just before the ':'
                     if (Regex.IsMatch(currentText.Substring(textPosition), @"^\s*:")
-                        && isOutOFAStringRegex.IsMatch(currentText.Substring(0, textPosition))) // Ensure that the : is not in a string
+                        && isOutOfAStringRegex.IsMatch(currentText.Substring(0, textPosition))) // Ensure that the : is not in a string
                     {
                         while (textPosition > 0 && currentText[textPosition] != '"')
                             textPosition--;
@@ -79,7 +79,7 @@ namespace GetJsonPathFromCursor
 
                     // if we are in a collection
                     if ((currentText[textPosition] == ',' || currentText[textPosition] == '[')
-                        && isOutOFAStringRegex.IsMatch(currentText.Substring(0, textPosition))) // Ensure that the : is not in a string
+                        && isOutOfAStringRegex.IsMatch(currentText.Substring(0, textPosition))) // Ensure that the : is not in a string
                     {
                         textPosition++;
 
