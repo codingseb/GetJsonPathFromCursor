@@ -11,8 +11,8 @@ namespace GetJsonPathFromCursor
         public const string Name = "Get Json Path From Cursor";
         public const string Description = @"Get Json Path From Cursor";
         public const string Language = "en-US";
-        public const string Version = "1.0";
-        public const string Author = "CodingSeb";
+        public const string Version = "1.1";
+        public const string Author = "Coding Seb";
         public const string Tags = "";
     }
 }
