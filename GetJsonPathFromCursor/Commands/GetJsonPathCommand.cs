@@ -25,6 +25,9 @@ namespace GetJsonPathFromCursor
             var otherJsonCollection = new Regex(@"^,\s*\](\s+|\w+|\d+(\.\d+)?|""(""\\|[^""])*""|:|,|(?<curlyBracket>})|(?<-curlyBracket>{)|(?<squareBracket>\])|(?<-squareBracket>\[))*\[(\s*:\s*""(""\\|[^""])*"")?\s*");
             var otherJsonSimpleValue = new Regex(@"^,\s*(\w+|\d+(\.\d+)?|""(""\\|[^""])*"")(\s*:\s*""(""\\|[^""])*"")?\s*");
 
+            var lastJsonObject = new Regex(@"^\s*}(\s+|\w+|\d+(\.\d+)?|""(""\\|[^""])*""|:|,|(?<curlyBracket>})|(?<-curlyBracket>{)|(?<squareBracket>\])|(?<-squareBracket>\[))*{(\s*:\s*)?");
+            var lastJsonCollection = new Regex(@"^\s*\](\s+|\w+|\d+(\.\d+)?|""(""\\|[^""])*""|:|,|(?<curlyBracket>})|(?<-curlyBracket>{)|(?<squareBracket>\])|(?<-squareBracket>\[))*\[(\s*:\s*)?");
+
             List<Regex> parseAndEatRegexList = new()
             {
                 objectStartWithKeyRegex,
@@ -73,6 +76,13 @@ namespace GetJsonPathFromCursor
                             textPosition--;
 
                         break;
+                    }
+
+                    if((match = lastJsonObject.Match(currentText.Substring(0, textPosition).ReverseText())).Success ||
+                        (match = lastJsonCollection.Match(currentText.Substring(0, textPosition).ReverseText())).Success)
+                    {
+                        textPosition -= match.Length;
+                        continue;
                     }
 
                     textPosition--;
