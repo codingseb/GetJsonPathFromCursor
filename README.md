@@ -1,6 +1,6 @@
 # GetJsonPathFromCursor
 
-##Installation
+## Installation
 Install the [Get Json Path From Cursor](https://marketplace.visualstudio.com/items?itemName=CodingSeb.GetJsonPathFromCursor) plugin in visual studio 2022
 
 ## Use it
