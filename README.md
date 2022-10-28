@@ -10,4 +10,4 @@ In visual studio 2022 :
 3. Activate the plugin either  
   3.1 by clicking on menu **Tools --> Get full JSON Path to Cursor**  
   3.2 by pressing the hotkey **Ctrl+Shift+J**  
-4. The is shown in the status bar and copied in your clipboard
+4. The JSON path is shown in the status bar and copied in your clipboard
